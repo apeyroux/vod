@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<style>
+ div.center {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     width: 40%;
+     height: 50%;
+     padding: 20px;  
+     background: white;
+     color: black;
+     text-align: center;
+ }
+</style>
+<meta http-equiv="Refresh" content="5; url=/{{ url }}">
+{% endblock %}
+
+{% block content %}
+<div class="center">
+    <h3>wait while preparing for the download ...</h3>
+</div>
+{% endblock %}
